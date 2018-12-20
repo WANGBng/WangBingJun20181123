@@ -50,8 +50,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GaoDeActivity"></activity>
-        <activity android:name=".FenActivity"></activity>
+        <activity android:name=".GaoDeActivity" />
+        <activity android:name=".FenActivity" />
+        <activity android:name=".LocaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

@@ -14,6 +14,7 @@ import com.bwie.my.activity.FenActivity;
 import com.bwie.my.activity.R;
 import com.bwie.my.bean.HomeBean;
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -50,6 +51,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         holder.month_sales.setText("月销售"+homeList.get(position).getMonth_sales()+"笔");
         holder.manjian_price.setText(homeList.get(position).getDiscounts2().get(0).getInfo());
         holder.dazhe_price.setText(homeList.get(position).getDiscounts2().get(1).getInfo());
+
+//        Picasso.with()
 
       //  Log.e(TAG, "onBindViewHolder: "+homeList.get(position).getName() );
         holder.itemView.setOnClickListener(new View.OnClickListener() {
